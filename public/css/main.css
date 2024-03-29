@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image-from-rawpixel-id-10179647-jpeg.jpg);
+
+}
+
+.wrapper{
+    margin: 5rem;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(73, 40, 40);
+    font-weight: 900;
+}
+
+.header h2{
+    font-size: 16px;
+    color: rgb(114, 100, 100);
+    font-weight: 400;
+}
+
+
+.node-input{
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+
+}
+
+.node-input label{
+    text-align: center;
+}
+
+.node-input input{
+    border: none;
+    padding: 1rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(200, 200, 200);
+}
+
+.submit-btn{
+    padding: 0.5rem;
+    margin: 1rem 5rem;
+    border: none;
+    background-color: rgb(150, 145, 138);
+    border-radius: 1rem;
+}
+
+.submit-btn:hover{
+    background-color: rgb(119, 114, 109);
+}   
+
+
+#nodes{
+    padding: 0.2rem;
+    margin: 1rem 3rem;
+    border-radius: 1rem;
+}
+
+
+.result{
+    display: flex;
+    flex-direction: column;
+}
+
+.r-input{
+    margin: 0.5rem;
+}
+
+.r-input input{
+    border:0.1px solid rgb(171, 169, 169);
+
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+}
+
+.wrapper2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+
+.wrapper3{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+
+.resistances {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.current{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+

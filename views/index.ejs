@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
+    <script defer src='/scripts/script.js'></script>
+    
+</head>
+<body>
+
+
+    <div class="wrapper">
+        <div class="header">
+            <h1>Node Voltage Calculator</h1>
+            <h2>By Judy Essam *★,°*:.☆(￣▽￣)/$:*.°★* 。</h2>
+        </div>
+        <form  class="node-input" method="POST" action="/process-form">
+            <label>Please choose the Number of Nodes</label>
+            <input type="text" class="node">
+
+         
+            <!-- <button class="submit-btn" type="submit">submit</button> -->
+        </form>
+        <button disabled class="submit-btn" id="resubmit"> Resubmit</button>
+
+     
+
+        <form method="post" action="/answer" class="result">
+            <!-- <div class="r-input">
+                <label>v1</label>
+                <input type="text" >
+            </div> -->
+        <h1 style="display: none;" class="node-amount">
+            
+        </h1>
+        <h1 style="display: none;" class="resistances">Enter the resistances</h1>
+         <div class="wrapper2"></div>
+        <h1  style="display: none;" class="current">Enter the currents</h1>
+        <div class="wrapper3"></div>
+        <button style="display: none;" class="submit-btn" id="submit" type="submit">submit</button>
+
+        </form>
+
+
+    </div>
+    <script defer src='/scripts/script.js'></script>
+</body>
+</html>
