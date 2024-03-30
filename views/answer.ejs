@@ -15,14 +15,24 @@
             <h1>Node Voltage Calculator</h1>
             <h2>By Judy Essam *★,°*:.☆(￣▽￣)/$:*.°★* 。</h2>
         </div>
+
+
         <div class="answer">
-            <div>
-                <span>The Number of Nodes are <%- nodes %></span>
-            </div>
-            <h1>The answer is: </h1>
-            <h1>
-                <%- answer.V11 %>
-            </h1>
+            <!-- <div>
+                <span class="node-ans">The Number of Nodes are <%- nodes %></span>
+            </div> -->
+            <h1>The calculated volts are: </h1>
+           <ul>
+            <% for(var i=0; i<answer.length; i++) {%>
+                <li>
+                    <span>V =</span>
+                   
+                    <%= answer[i] %>
+                
+                </li>
+                <% } %>
+           </ul>
+
             <h1></h1>    
         </div>
      

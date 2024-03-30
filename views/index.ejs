@@ -18,14 +18,16 @@
             <h2>By Judy Essam *★,°*:.☆(￣▽￣)/$:*.°★* 。</h2>
         </div>
         <form  class="node-input" method="POST" action="/process-form">
-            <label>Please choose the Number of Nodes</label>
+            <label>Please choose the Number of Nodes between 1 and 9</label>
             <input type="text" class="node">
 
+            <h1 style="display: none;" class="error">Please type a valid number.</h1>
          
             <!-- <button class="submit-btn" type="submit">submit</button> -->
         </form>
-        <button disabled class="submit-btn" id="resubmit"> Resubmit</button>
-
+        <div class="btn-wrapper">
+        <button style="display:none" class="submit-btn" id="resubmit"> Resubmit</button>
+</div>
      
 
         <form method="post" action="/answer" class="result">

@@ -2,21 +2,28 @@
 let parent = document.getElementsByClassName("wrapper2")[0]
 let submitbtn = document.getElementById("submit")
 let resubmit = document.getElementById("resubmit")
+let resistance = document.getElementsByClassName("resistances")[0]
+let current= document.getElementsByClassName("current")[0]
+let parent3 = document.getElementsByClassName("wrapper3")[0]
+let error = document.getElementsByClassName("error")
+// let submitbtn = document.getElementById("submit")
 
 let nodes = document.getElementsByClassName("node")[0]
 
 nodes.addEventListener("input", function(){
    
-    const value = nodes.value 
+    const value =nodes.value
     console.log(typeof value)
-    let resistance = document.getElementsByClassName("resistances")[0]
-    let current= document.getElementsByClassName("current")[0]
+    // let resistance = document.getElementsByClassName("resistances")[0]
+    // let current= document.getElementsByClassName("current")[0]
 
   
-    resistance.style.display= "block"
-    current.style.display = "block"
+    
 
-
+   
+  
+        resistance.style.display= "block"
+        current.style.display = "block"
     for(let i= 1; i <= nodes.value;i++){
         for(let j = 1; j <=nodes.value;j++){
             create_resistance("V"+i+j)}
@@ -29,19 +36,22 @@ nodes.addEventListener("input", function(){
 
     let submitbtn = document.getElementById("submit")
     submitbtn.style.display = "block"
-
-    resubmit.disabled = false
-
-
     sendDataToServer(value);
-
+    resubmit.style.display = "block"
 })
 
 
 
 resubmit.addEventListener("click", function(){
-    submitbtn.disabled =false
+   nodes.disabled = false
+    nodes.value = ""
     parent.innerHTML = ""
+    resistance.style.display = "none"
+    parent3.innerHTML = ""
+    current.style.display = "none"
+    submitbtn.style.display = "none"
+    resubmit.style.display = "none"
+
 })
 
 
@@ -73,7 +83,7 @@ function create_resistance(text){
 function create_current(text){
     
     console.log("hellwwlo")
-    let parent = document.getElementsByClassName("wrapper3")[0]
+    let parent3 = document.getElementsByClassName("wrapper3")[0]
     let div = document.createElement("div");
     div.classList.add("r-input")
 
@@ -87,7 +97,7 @@ function create_current(text){
 
     div.appendChild(label)
     div.appendChild(input)
-    parent.appendChild(div)
+    parent3.appendChild(div)
 }
 
 

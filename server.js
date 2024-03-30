@@ -41,7 +41,6 @@ function put_resistances(data, arr){
                 }
         
             }
-            console.log("res is " +  result)
             val = result
         }
         else{
@@ -49,7 +48,6 @@ function put_resistances(data, arr){
         }}
 
         arr[i-1][j-1] = eval(val)
-        console.log(data["V"+i+j])
         }
     }
 }
@@ -85,10 +83,15 @@ app.post('/answer', (req, res)=>{
         let current_matrix = makearray(stored_value, 1)
         put_resistances(data, resistance_matrix)
         put_currents(data, current_matrix)
-        console.log(resistance_matrix)
+        
+        try{
         const x = math.lusolve(resistance_matrix, current_matrix);
         console.log(x)
-        res.render('answer', { nodes: stored_value , answer:data});
+
+        res.render('answer', { nodes: stored_value , answer:x});}
+        catch(error){
+            res.render('error')
+        }
     } else {
 
         res.render('error')
