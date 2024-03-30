@@ -54,7 +54,8 @@ function put_resistances(data, arr){
 
 function put_currents(data, arr){
     for(let i = 1;i <=stored_value;i++){
-        arr[i-1][0] = data["I"+i]
+        var val =  data["I"+i]
+        arr[i-1][0] = eval(val)
     }
 }
 

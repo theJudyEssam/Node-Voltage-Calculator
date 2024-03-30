@@ -37,7 +37,7 @@ nodes.addEventListener("input", function(){
     let submitbtn = document.getElementById("submit")
     submitbtn.style.display = "block"
     sendDataToServer(value);
-    resubmit.style.display = "block"
+    // resubmit.style.display = "block"
 })
 
 
@@ -50,7 +50,7 @@ resubmit.addEventListener("click", function(){
     parent3.innerHTML = ""
     current.style.display = "none"
     submitbtn.style.display = "none"
-    resubmit.style.display = "none"
+    // resubmit.style.display = "none"
 
 })
 
