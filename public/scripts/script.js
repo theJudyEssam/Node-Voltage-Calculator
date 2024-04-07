@@ -17,11 +17,6 @@ nodes.addEventListener("input", function(){
     // let resistance = document.getElementsByClassName("resistances")[0]
     // let current= document.getElementsByClassName("current")[0]
 
-  
-    
-
-   
-  
         resistance.style.display= "block"
         current.style.display = "block"
     for(let i= 1; i <= nodes.value;i++){
