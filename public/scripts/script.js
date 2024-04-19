@@ -6,14 +6,21 @@ let resistance = document.getElementsByClassName("resistances")[0]
 let current= document.getElementsByClassName("current")[0]
 let parent3 = document.getElementsByClassName("wrapper3")[0]
 let error = document.getElementsByClassName("error")
-// let submitbtn = document.getElementById("submit")
 
 let nodes = document.getElementsByClassName("node")[0]
 
 nodes.addEventListener("input", function(){
    
-    const value =nodes.value
-    console.log(typeof value)
+    const value =nodes.value;
+    console.log(typeof value);
+
+    let grid = "";
+    for(let i = 0; i < nodes.value;i++){
+        grid += "auto ";
+    }
+   
+    let parent = document.getElementsByClassName("wrapper2")[0];
+    parent.style.gridTemplateColumns = grid;
     // let resistance = document.getElementsByClassName("resistances")[0]
     // let current= document.getElementsByClassName("current")[0]
 
@@ -21,9 +28,9 @@ nodes.addEventListener("input", function(){
         current.style.display = "block"
     for(let i= 1; i <= nodes.value;i++){
         for(let j = 1; j <=nodes.value;j++){
-            create_resistance("V"+i+j)}
+            create_resistance("R"+i+j)}
     }
-
+   
     for(let i = 1; i<=nodes.value;i++){
         create_current("I"+i)
     }
@@ -55,7 +62,7 @@ resubmit.addEventListener("click", function(){
 function create_resistance(text){
 
 
-    console.log("hellwwlo")
+    
     let parent = document.getElementsByClassName("wrapper2")[0]
     let div = document.createElement("div");
     div.classList.add("r-input")
@@ -76,8 +83,7 @@ function create_resistance(text){
 }
 
 function create_current(text){
-    
-    console.log("hellwwlo")
+   
     let parent3 = document.getElementsByClassName("wrapper3")[0]
     let div = document.createElement("div");
     div.classList.add("r-input")

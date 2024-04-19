@@ -92,7 +92,8 @@ body{
 
 .wrapper2{
     display: grid;
-    grid-template-columns: auto auto auto;
+    /* grid-template-columns: auto auto auto;
+     */
     padding: 10px;
 }
 

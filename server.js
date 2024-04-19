@@ -26,7 +26,7 @@ function put_resistances(data, arr){
 //{ v11:2342, }
     for(let i = 1; i <= stored_value; i++){
         for(let j= 1; j <= stored_value;j++){
-            let val =  data["V"+i+j]
+            let val =  data["R"+i+j]
 
 
         if(val!=0 ){
