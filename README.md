@@ -2,7 +2,7 @@
 
 # Node-Voltage-Calculator
 
-Node-Voltage-Calculator is a web application designed to calculate the voltages in a DC circuit using the node analysis by inspection method. It simplifies the process of analyzing circuit voltages by providing a user-friendly interface where users can input circuit parameters and obtain voltage calculations quickly.
+Node-Voltage-Calculator is a web application designed to calculate the voltages in a DC circuit using the node analysis by inspection method. It simplifies the process of analyzing circuit voltages by providing a user-friendly interface where users can input circuit parameters and obtain voltage calculations quickly. This was a bonus project for my Circuits II course, but I decided to take it as a learning opportunity and learn more about Express.js. 
 
 ## Features
 
@@ -10,7 +10,6 @@ Node-Voltage-Calculator is a web application designed to calculate the voltages 
 - **Easy Input**: Users only need to enter the conductances of the circuit and sources.
 - **Express.js Backend**: Utilizes Express.js for the backend implementation.
 - **Vanilla Frontend**: The frontend is built using vanilla JavaScript for simplicity and efficiency.
-- **Under Development**: The project is actively being developed, with more features and improvements to come.
 
 ## Usage
 
@@ -25,7 +24,7 @@ To run the Node-Voltage-Calculator locally, follow these steps:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/Node-Voltage-Calculator.git
+    git clone https://github.com/theJudyEssam/Node-Voltage-Calculator.git
     ```
 
 2. Navigate into the project directory:
